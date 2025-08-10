@@ -56,7 +56,7 @@ export default function Footer() {
           </Grid>
           <Grid item xs={2} width='10%' style={{minWidth: "50px"}}>
             <Item>
-                <Link href='https://www.linkedin.com/in/duong-mai-78313b376/' target='_blank'><LinkedIn /></Link>
+                <Link href='https://www.linkedin.com/in/mai-dang-duong-78313b376/' target='_blank'><LinkedIn /></Link>
             </Item>
           </Grid>
         </div>

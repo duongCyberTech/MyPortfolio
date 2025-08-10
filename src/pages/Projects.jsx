@@ -52,27 +52,42 @@ export default function Projects() {
         id: 1,
         title: 'My Portfolio',
         description: 'Description of my portfolio',
-        image: 'https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=300&h=200&fit=crop&auto=format',
-        deploy: 'https://yourusername.github.io/your-repo/',
-        github: 'https://github.com/yourusername/your-repo',
+        image: '/porfolio.png',
+        deploy: 'https://d-tech-port.netlify.app/projects',
+        github: 'https://github.com/duongCyberTech/MyPortfolio',
         tech: ['React']
         },
         {
         id: 2,
         title: 'WQI Analysis',
         description: 'Multidisciplinary Project - Information Systems Orientation',
-        image: 'https://images.unsplash.com/photo-1556438064-2d7646166914?w=300&h=200&fit=crop&auto=format',
-        github: 'https://github.com/yourusername/your-repo',
+        image: 'https://aime.com.tr/wp-content/uploads/2023/11/water-quality-monitoring.jpg',
+        github: 'https://github.com/duongCyberTech/WQI_Analysis.git',
         tech: ['React', 'NodeJs', 'ExpressJs', 'FastAPI']
         },
         {
         id: 3,
         title: 'Just Another Virtual Machine',
         description: 'Assignment of Data Structures & Algorithms',
-        image: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=300&h=200&fit=crop&auto=format',
-        deploy: 'https://yourusername.github.io/your-repo/',
-        github: 'https://github.com/yourusername/your-repo',
+        image: 'https://tse1.mm.bing.net/th/id/OIP.AKdtOjMRFOG0AgKAYIzLZAHaDt?rs=1&pid=ImgDetMain&o=7&rm=3',
+        github: 'https://github.com/duongCyberTech/JAVM.git',
         tech: ['C++']
+        },
+        {
+        id: 4,
+        title: 'Code Race Challenge 2025',
+        description: 'Bosch Challenge',
+        image: '/coderace.png',
+        github: 'https://github.com/duongCyberTech/CodeRace2025.git',
+        tech: ['Python']
+        },
+        {
+            id: 5,
+            title: 'Smart Printing System',
+            description: 'Description of my new project',
+            image: 'https://tse2.mm.bing.net/th/id/OIP.4JsVNp5Ai-USIcbk7NiAlwHaEO?rs=1&pid=ImgDetMain&o=7&rm=3',
+            github: 'https://github.com/duongCyberTech/CNPM.git',
+            tech: ['NodeJs', 'React']
         }
     ];
 
@@ -229,7 +244,7 @@ export default function Projects() {
         borderRadius: '4px',
         fontSize: '12px',
         cursor: 'pointer',
-        transition: 'background-color 0.2s ease'
+        // transition: 'background-color 0.2s ease'
     };
 
     const footerStyle = {
@@ -427,10 +442,10 @@ export default function Projects() {
                     <button
                     style={{ ...viewProjectButtonStyle, backgroundColor: project.deploy ? '#4299e1' : '#718096', color: '#ffffff', cursor: project.deploy ? 'pointer' : 'not-allowed' }}
                     onMouseEnter={(e) => {
-                        e.target.style.backgroundColor = '#3182ce';
+                        e.target.style.backgroundColor = project.deploy ? '#3182ce' : '#718096';
                     }}
                     onMouseLeave={(e) => {
-                        e.target.style.backgroundColor = '#4299e1';
+                        e.target.style.backgroundColor = project.deploy ? '#4299e1' : '#718096';
                     }}
                     disabled={!project.deploy}
 

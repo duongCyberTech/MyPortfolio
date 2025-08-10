@@ -94,11 +94,11 @@ export default function Header() {
               _projects
             </Item>
           </Grid>
-          <Grid item xs={2} width='10%' style={{minWidth: "150px"}}>
+          {/* <Grid item xs={2} width='10%' style={{minWidth: "150px"}}>
             <Item onClick={() => {setActiveItem('_contact_me'); navigate('/contact-me')}} isActive={activeItem === '_contact_me'}>
               _contact_me
             </Item>
-          </Grid>
+          </Grid> */}
         </div>
         
         <Grid item xs={2} width='100%'>
